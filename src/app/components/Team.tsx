@@ -16,7 +16,7 @@ export const Team = () => {
       name: "Bhanu Kiran R",
       role: "Operations Lead",
       image: "COPS/PIC.jpg",
-      bio: "UX Designer and advocate for inclusive technology.",
+      bio: "AI engineer specializing in machine learning, deep learning, and large language model–driven systems",
       linkedin: "https://linkedin.com/in/bhanu-kiran-r",
       email: "bhanukiran90216@gmail.com"
     },
@@ -24,8 +24,8 @@ export const Team = () => {
       name: "Deepak P S",
       role: "Tech Lead",
       image: "COPS/image.png",
-      bio: "Full-stack developer with a love for cloud architecture.",
-      linkedin: "https://linkedin.com/in/deepak-ps",
+      bio: "Cybersecurity engineer focused on building intelligent and resilient digital defense systems",
+      linkedin: "https://linkedin.com/in/deepak-p-s",
       email: "deepakkrishnark@gmail.com"
     }
   ];
