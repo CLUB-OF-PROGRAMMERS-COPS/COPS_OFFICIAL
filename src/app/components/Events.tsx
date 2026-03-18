@@ -14,7 +14,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
       category: "Workshop",
-      registrationLink: ""
+      registrationLink: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true" width="640" height="1333" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
     },
     {
       title: "Techno Fest 2026",
