@@ -14,7 +14,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
       category: "Workshop",
-      registrationLink: ""
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeD1xb63OeAmQJJpMSMJywgiU1n-8cGy3GVDKBFT6ZjEHYDdw/viewform?embedded=true"
     },
     {
       title: "Techno Fest 2026",
@@ -32,7 +32,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1762176263996-a0713a49ee4d",
       category: "Seminar",
-      registrationLink: ""
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeD1xb63OeAmQJJpMSMJywgiU1n-8cGy3GVDKBFT6ZjEHYDdw/viewform?embedded=true"
     }
   ];
 
