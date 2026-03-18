@@ -4,7 +4,7 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
 export const Events = () => {
   // Set this to true and fill in event details when events are confirmed
-  const eventsConfirmed = false;
+  const eventsConfirmed = true;
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
   const events = [
     {
@@ -23,7 +23,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a",
       category: "Hackathon",
-      registrationLink: ""
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeD1xb63OeAmQJJpMSMJywgiU1n-8cGy3GVDKBFT6ZjEHYDdw/viewform?embedded=true"
     },
     {
       title: "Guest Speaker Session",
