@@ -4,7 +4,7 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
 export const Events = () => {
   // Set this to true and fill in event details when events are confirmed
-  const eventsConfirmed = true;
+  const eventsConfirmed = false;
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
   const events = [
     {
