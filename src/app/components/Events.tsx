@@ -4,7 +4,7 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
 export const Events = () => {
   // Set this to true and fill in event details when events are confirmed
-  const eventsConfirmed = true;
+  const eventsConfirmed = true; // Change to false to show "Coming Soon" state
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
   const events = [
     {
@@ -14,7 +14,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
       category: "Workshop",
-      registrationLink: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true" width="640" height="1333" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
+      registrationLink: ""
     },
     {
       title: "Techno Fest 2026",
@@ -23,7 +23,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a",
       category: "Hackathon",
-      registrationLink: ""
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true"
     },
     {
       title: "Guest Speaker Session",
