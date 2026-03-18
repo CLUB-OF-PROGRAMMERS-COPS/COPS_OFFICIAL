@@ -135,15 +135,7 @@ export const Team = () => {
       </div>
     </section>
   );
-};                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};      
+};                
 <p className="text-blue-600 font-semibold text-sm mb-4">{member.role}</p>
       <p className="text-gray-600 text-sm max-w-xs mx-auto mb-6 italic">"{member.bio}"</p>
       <div className="flex justify-center gap-4 text-gray-400">
