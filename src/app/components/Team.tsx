@@ -9,14 +9,14 @@ export const Team = () => {
       role: "Club Lead",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2024/08/VASUDEVA-R-300x300-2.png",
       bio: "HOD & Assoc. Professor, Dept. of CS&E.",
-      linkedin: "https://linkedin.com/in/dr-vasudeva-r",
+      linkedin: "",
       email: "vasudeva@gmail.com"
     },
     {
       name: "Bhanu Kiran R",
       role: "Operations Lead",
       image: "COPS/PIC.jpg",
-      bio: "UX Designer and advocate for inclusive technology.",
+      bio: "Full-Stack Developer | Building with Generative AI, Deep Learning & LLMs.",
       linkedin: "https://linkedin.com/in/bhanu-kiran-r",
       email: "bhanukiran90216@gmail.com"
     },
@@ -24,8 +24,8 @@ export const Team = () => {
       name: "Deepak P S",
       role: "Tech Lead",
       image: "COPS/image.png",
-      bio: "Full-stack developer with a love for cloud architecture.",
-      linkedin: "https://linkedin.com/in/deepak-ps",
+      bio: "Cybersecurity Intern | Enthusiast in Cybersecurity and related Tech.",
+      linkedin: "https://www.linkedin.com/in/deepak-p-s",
       email: "deepakkrishnark@gmail.com"
     }
   ];
