@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Calendar, MapPin, Clock, Sparkles, X } from "lucide-react";
+import { Calendar, MapPin, Clock, Sparkles, X, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
+
+type EventItem = {
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  image: string;
+  category: string;
+  registrationLink: string;
+  description: string;
+  instructions: string[];
+};
 
 export const Events = () => {
   // Set this to true and fill in event details when events are confirmed
   const eventsConfirmed = true; // Change to false to show "Coming Soon" state
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
-  const events = [
+  const events: EventItem[] = [
     {
       title: "AI & Machine Learning Workshop",
       date: "TBA",
@@ -14,7 +26,13 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
       category: "Workshop",
-      registrationLink: ""
+      registrationLink: "",
+      description: "Hands-on introduction to machine learning fundamentals with practical examples.",
+      instructions: [
+        "Open to all years and all branches.",
+        "Carry your college ID card.",
+        "Bring a charged laptop for practice activities.",
+      ]
     },
     {
       title: "Techno Fest 2026",
@@ -23,7 +41,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a",
       category: "Hackathon",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true"
+      registrationLink: ""
     },
     {
       title: "Guest Speaker Session",
@@ -32,7 +50,13 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1762176263996-a0713a49ee4d",
       category: "Seminar",
-      registrationLink: ""
+      registrationLink: "",
+      description: "Expert talk on current industry trends, career preparation, and future technologies.",
+      instructions: [
+        "Seats may be limited and assigned first-come, first-served.",
+        "Please arrive 15 minutes before session start.",
+        "Q&A participation is encouraged.",
+      ]
     }
   ];
 
@@ -40,6 +64,10 @@ export const Events = () => {
     open: false,
     url: "",
     title: "",
+  });
+  const [infoModal, setInfoModal] = useState<{ open: boolean; event: EventItem | null }>({
+    open: false,
+    event: null,
   });
 
   const openFormModal = (url: string, title: string) => {
@@ -49,12 +77,16 @@ export const Events = () => {
   };
 
   const closeFormModal = () => setFormModal({ open: false, url: "", title: "" });
+  const closeInfoModal = () => setInfoModal({ open: false, event: null });
 
   // Close on Escape key
   useEffect(() => {
-    if (!formModal.open) return;
+    if (!formModal.open && !infoModal.open) return;
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeFormModal();
+      if (e.key === "Escape") {
+        closeFormModal();
+        closeInfoModal();
+      }
     };
     document.body.style.overflow = "hidden"; // prevent background scroll
     window.addEventListener("keydown", handleKey);
@@ -62,14 +94,20 @@ export const Events = () => {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", handleKey);
     };
-  }, [formModal.open]);
+  }, [formModal.open, infoModal.open]);
 
-  const handleRegister = (registrationLink: string, title: string) => {
-    if (registrationLink) {
-      openFormModal(registrationLink, title);
+  const handleRegister = (event: EventItem) => {
+    if (event.registrationLink) {
+      setInfoModal({ open: true, event });
     } else {
       document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const continueToForm = () => {
+    if (!infoModal.event?.registrationLink) return;
+    openFormModal(infoModal.event.registrationLink, infoModal.event.title);
+    closeInfoModal();
   };
 
   return (
@@ -129,7 +167,7 @@ export const Events = () => {
                   </div>
                 </div>
                 <button
-                  onClick={() => handleRegister(event.registrationLink, event.title)}
+                  onClick={() => handleRegister(event)}
                   className={`mt-6 w-full py-3 font-semibold rounded-xl transition-all duration-200 ${
                     event.registrationLink && eventsConfirmed
                       ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -159,6 +197,76 @@ export const Events = () => {
           </button>
         </div>
       </div>
+
+      {/* Event Info Modal (before registration) */}
+      {infoModal.open && infoModal.event && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+          onClick={closeInfoModal}
+        >
+          <div
+            className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-gray-100">
+              <h3 className="text-sm sm:text-lg font-bold text-gray-900 truncate pr-2">
+                {infoModal.event.title} — Event Information
+              </h3>
+              <button
+                onClick={closeInfoModal}
+                className="text-gray-400 hover:text-gray-700 transition-colors p-1 rounded-full hover:bg-gray-100"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-5 sm:p-6 overflow-auto">
+              <p className="text-gray-700 mb-4">{infoModal.event.description}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5 text-sm">
+                <div className="rounded-lg bg-slate-50 p-3">
+                  <p className="text-gray-500">Date</p>
+                  <p className="font-semibold text-gray-900">{infoModal.event.date}</p>
+                </div>
+                <div className="rounded-lg bg-slate-50 p-3">
+                  <p className="text-gray-500">Time</p>
+                  <p className="font-semibold text-gray-900">{infoModal.event.time}</p>
+                </div>
+                <div className="rounded-lg bg-slate-50 p-3">
+                  <p className="text-gray-500">Venue</p>
+                  <p className="font-semibold text-gray-900">{infoModal.event.location}</p>
+                </div>
+              </div>
+
+              <h4 className="text-base font-bold text-gray-900 mb-2">Before You Register</h4>
+              <ul className="space-y-2 mb-6">
+                {infoModal.event.instructions.map((item, idx) => (
+                  <li key={idx} className="text-sm text-gray-700 flex items-start gap-2">
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-col-reverse sm:flex-row gap-3 sm:justify-end">
+                <button
+                  onClick={closeInfoModal}
+                  className="px-4 py-2.5 rounded-xl bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={continueToForm}
+                  className="px-4 py-2.5 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2"
+                >
+                  Continue to Registration
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Google Form Modal */}
       {formModal.open && (

@@ -7,6 +7,16 @@ import { Gallery } from "@/app/components/Gallery";
 import { Contact } from "@/app/components/Contact";
 import { Footer } from "@/app/components/Footer";
 import { Toaster } from "sonner";
+import { motion } from "framer-motion";
+
+const sectionReveal = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 export default function App() {
   return (
@@ -15,7 +25,14 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <section id="about" className="py-24 bg-white overflow-hidden relative">
+        <motion.section
+          id="about"
+          className="py-24 bg-white overflow-hidden relative"
+          variants={sectionReveal}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {/* COPS Logo Background Watermark */}
           <div
             className="absolute inset-0 bg-no-repeat opacity-[0.2] pointer-events-none"
@@ -65,11 +82,19 @@ export default function App() {
               </div>
             </div>
           </div>
-        </section>
-        <Events />
-        <Team />
-        <Gallery />
-        <Contact />
+        </motion.section>
+        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <Events />
+        </motion.div>
+        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <Team />
+        </motion.div>
+        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <Gallery />
+        </motion.div>
+        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <Contact />
+        </motion.div>
       </main>
       <Footer />
     </div>
