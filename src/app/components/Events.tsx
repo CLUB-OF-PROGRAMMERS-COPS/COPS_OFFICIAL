@@ -41,7 +41,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a",
       category: "Hackathon",
-      registrationLink: ""
+      registrationLink: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
     },
     {
       title: "Guest Speaker Session",
@@ -50,7 +50,7 @@ export const Events = () => {
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1762176263996-a0713a49ee4d",
       category: "Seminar",
-      registrationLink: "",
+      registrationLink: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTq6BG-rDuYMxU7y96rZgLtkiRPQTydER2KKfJ7tNL2d5rpA/viewform?embedded=true" width="640" height="1032" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>",
       description: "Expert talk on current industry trends, career preparation, and future technologies.",
       instructions: [
         "Seats may be limited and assigned first-come, first-served.",
