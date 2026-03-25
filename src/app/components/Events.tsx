@@ -295,7 +295,6 @@ export const Events = () => {
                 <X className="w-5 h-5" />
               </button>
             </div>
-
             {/* Google Form iframe */}
             <div className="flex-1 overflow-auto">
               <iframe
