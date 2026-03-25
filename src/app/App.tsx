@@ -29,7 +29,7 @@ export default function App() {
           id="about"
           className="py-24 bg-white overflow-hidden relative"
           variants={sectionReveal}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
@@ -83,16 +83,16 @@ export default function App() {
             </div>
           </div>
         </motion.section>
-        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <motion.div variants={sectionReveal} initial={false} whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
           <Events />
         </motion.div>
-        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <motion.div variants={sectionReveal} initial={false} whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
           <Team />
         </motion.div>
-        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <motion.div variants={sectionReveal} initial={false} whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
           <Gallery />
         </motion.div>
-        <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <motion.div variants={sectionReveal} initial={false} whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
           <Contact />
         </motion.div>
       </main>
