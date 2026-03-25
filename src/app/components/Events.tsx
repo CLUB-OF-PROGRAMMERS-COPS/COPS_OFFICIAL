@@ -20,13 +20,13 @@ export const Events = () => {
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
   const events: EventItem[] = [
     {
-      title: "AI & Machine Learning Workshop",
-      date: "TBA",
-      time: "TBA",
+      title: "Startup Arena",
+      date: "10-04-2026",
+      time: "09:30 AM",
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
-      category: "Workshop",
-      registrationLink: "",
+      category: "Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
       description: "Hands-on introduction to machine learning fundamentals with practical examples.",
       instructions: [
         "Open to all years and all branches.",
@@ -35,28 +35,90 @@ export const Events = () => {
       ]
     },
     {
-      title: "Techno Fest 2026",
-      date: "TBA",
-      time: "TBA",
+      title: "Agent Forge",
+      date: "10-04-2026",
+      time: "09:30 AM",
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a",
-      category: "Hackathon",
+      category: "Technical",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
-      description: "Join us for an exciting hackathon and showcase your coding skills!",
+      description: "A thrilling 4-hour hackathon where teams will build AI agents to solve a surprise challenge revealed at the start of the event.",
       instructions: [
-        "Open to all years and all branches.",
-        "Carry your college ID card.",
-        "Bring a charged laptop for practice activities.",
+        "Team Composition: Form a team of 2 members, solo participation is not allowed, but you are encouraged to collaborate across different departments or year levels.",
+        "The 'Mystery' Challenge: The specific problem statement remains sealed until 9:30 AM on the day of the event , ensuring every team starts from zero with no prior hints or leaks.",
+        "Platform & AI Freedom: You can build your agent for WhatsApp, Telegram, Web, or Mobile , and you are free to use any free-tier AI API like Gemini, Groq, or OpenAI.",
+        "Development Rules: All core logic must be written on the day of the event ,while you can use AI coding tools like ChatGPT or Copilot, you must be able to explain every part of your code to the judges.",
+        "Submission & Live Demo: You must submit your GitHub repository and a 60-second demo video (optional) by the 2:00 PM hard deadline , followed by a 5-minute live demonstration where judges will interact with your agent in real-time.",
       ]
     },
     {
-      title: "Guest Speaker Session",
-      date: "TBA",
-      time: "TBA",
+      title: "Techno Enigma",
+      date: "10-04-2026",
+      time: "09:30 AM",
       location: "CBIT Campus",
       image: "https://images.unsplash.com/photo-1762176263996-a0713a49ee4d",
-      category: "Seminar",
-      registrationLink: "",
+      category: "Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
+      description: "Expert talk on current industry trends, career preparation, and future technologies.",
+      instructions: [
+        "Seats may be limited and assigned first-come, first-served.",
+        "Please arrive 15 minutes before session start.",
+        "Q&A participation is encouraged.",
+      ]
+    },
+    {
+      title: "Code and Conquer",
+      date: "10-04-2026",
+      time: "09:30 AM",
+      location: "CBIT Campus",
+      image: "https://images.unsplash.com/photo-1722573783625-eceb04251036",
+      category: "Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
+      description: "Expert talk on current industry trends, career preparation, and future technologies.",
+      instructions: [
+        "Seats may be limited and assigned first-come, first-served.",
+        "Please arrive 15 minutes before session start.",
+        "Q&A participation is encouraged.",
+      ]
+    },
+    {
+      title: "Webtopia",
+      date: "10-04-2026",
+      time: "09:30 AM",
+      location: "CBIT Campus",
+      image: "https://images.unsplash.com/photo-1762176263996-a0713a49ee4d",
+      category: "Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
+      description: "Expert talk on current industry trends, career preparation, and future technologies.",
+      instructions: [
+        "Seats may be limited and assigned first-come, first-served.",
+        "Please arrive 15 minutes before session start.",
+        "Q&A participation is encouraged.",
+      ]
+    },
+    {
+      title: "BGMI",
+      date: "10-04-2026",
+      time: "09:30 AM",
+      location: "CBIT Campus",
+      image: "https://wallpaperbat.com/img/619573-pubg-bgmi-spark-flame-4k-wallpaper.jpg",
+      category: "Non-Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
+      description: "Expert talk on current industry trends, career preparation, and future technologies.",
+      instructions: [
+        "Seats may be limited and assigned first-come, first-served.",
+        "Please arrive 15 minutes before session start.",
+        "Q&A participation is encouraged.",
+      ]
+    },
+    {
+      title: "Free Fire",
+      date: "10-04-2026",
+      time: "09:30 AM",
+      location: "CBIT Campus",
+      image: "https://wallpaperaccess.com/full/1077356.jpg",
+      category: "Non-Technical",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
       description: "Expert talk on current industry trends, career preparation, and future technologies.",
       instructions: [
         "Seats may be limited and assigned first-come, first-served.",
@@ -122,7 +184,7 @@ export const Events = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">I-Sphere 1.0</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Join us for our upcoming workshops, seminars, and networking events. No prior experience needed!
+            A Technical and Non-Technical competition to bring out the competitive spirit and creativity. Event scheduled on <strong>10-04-2026 (Friday) at 09:30 AM</strong>. Register before <strong>06-04-2026</strong>.
           </p>
         </div>
 
