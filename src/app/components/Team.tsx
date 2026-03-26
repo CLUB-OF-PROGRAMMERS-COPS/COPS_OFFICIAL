@@ -13,19 +13,19 @@ export const Team = () => {
       email: "vasudeva@gmail.com"
     },
     {
-      name: "Prof. Kavitha N",
+      name: "Asst. Prof. Kavitha N",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/06/KAVITHA-N-2048x2048-1-768x768.png",
       bio: "Asst. Professor, Dept. of CS&E."
     },
     {
-      name: "Prof. Sagar G S",
+      name: "Asst. Prof. Sagar G S",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/06/Sagar-G-S-2048x2048-1-768x768.png",
       bio: "Asst. Professor, Dept. of CS&E."
     },
     {
-      name: "Prof. Mahalakshmi R",
+      name: "Asst. Prof. Mahalakshmi R",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/09/MAHALAKSHMI.png",
       bio: "Asst. Professor, Dept. of CS&E."
@@ -42,7 +42,7 @@ export const Team = () => {
       name: "Deepak P S",
       role: "Tech Lead",
       image: "COPS/image.png",
-      bio: "Cybersecurity Intern | Enthusiast in Cybersecurity and related Tech.",
+      bio: "Cybersecurity Analyst & Security Research Enthusiast | Defending Digital Systems & Advancing Secure Technologies.",
       linkedin: "https://www.linkedin.com/in/deepak-p-s",
       email: "deepakkrishnark@gmail.com"
     }
