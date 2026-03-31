@@ -13,19 +13,19 @@ export const Team = () => {
       email: "vasudeva@gmail.com"
     },
     {
-      name: "Asst. Prof. Kavitha N",
+      name: "Prof. Kavitha N",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/06/KAVITHA-N-2048x2048-1-768x768.png",
       bio: "Asst. Professor, Dept. of CS&E."
     },
     {
-      name: "Asst. Prof. Sagar G S",
+      name: "Prof. Sagar G S",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/06/Sagar-G-S-2048x2048-1-768x768.png",
       bio: "Asst. Professor, Dept. of CS&E."
     },
     {
-      name: "Asst. Prof. Mahalakshmi R",
+      name: "Prof. Mahalakshmi R",
       role: "Club Teacher Coordinator",
       image: "https://cbitkolar.edu.in/wp-content/uploads/2025/09/MAHALAKSHMI.png",
       bio: "Asst. Professor, Dept. of CS&E."
@@ -70,9 +70,9 @@ export const Team = () => {
                   />
                 </div>
                 <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white z-20 shadow-lg group-hover:rotate-12 transition-transform">
-                  <a 
-                    href={member.linkedin} 
-                    target="_blank" 
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full h-full flex items-center justify-center"
                   >
@@ -87,7 +87,7 @@ export const Team = () => {
                 "{member.bio}"
               </p>
               <div className="flex justify-center gap-4 text-gray-400">
-                <a 
+                <a
                   href={`mailto:${member.email}`}
                   className="hover:text-gray-900 transition-colors"
                 >

@@ -49,9 +49,9 @@ export const Footer = () => {
             <h4 className="text-white font-bold mb-4 md:mb-6">Resources</h4>
             <ul className="space-y-4 text-sm">
               <li><a href="#" className="hover:text-blue-400 transition-colors">Project Showcase</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Learning Hub</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Club Constitution</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">FAQ</a></li>
+              <li><a href="https://drive.google.com/drive/folders/1cLnuEy2pfK6d7BBFzQs20TgGbySagmaJ?usp=sharing" className="hover:text-blue-400 transition-colors">Knowledge Center</a></li>
+              <li><a href="https://drive.google.com/file/d/1vDcHOIKF1KAh7tNsg4kgXh7sJMiWgoyp/view?usp=sharing" className="hover:text-blue-400 transition-colors">Club Charter</a></li>
+              <li><a href="https://drive.google.com/file/d/1yUkSNy0I6zMu0XcCBcpksOYwKrpnoOe-/view?usp=sharing" className="hover:text-blue-400 transition-colors">Members Directory</a></li>
             </ul>
           </div>
 
@@ -74,8 +74,8 @@ export const Footer = () => {
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>© 2026 CLUB OF PROGRAMMERS (COPS) | C BYREGOWDA INSTITUTE OF TECHNOLOGY. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="https://www.freeprivacypolicy.com/live/b1996bc3-bfde-474c-8dc4-96d4247c7289" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://drive.google.com/file/d/1S3VkbrlodKSHcxeZthErbNiJWcxmsZmd/view?usp=sharing" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
