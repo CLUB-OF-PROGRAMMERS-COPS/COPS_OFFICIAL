@@ -36,7 +36,7 @@ export default function App() {
           {/* COPS Logo Background Watermark */}
           <div
             className="absolute inset-0 bg-no-repeat opacity-[0.2] pointer-events-none"
-            style={{ backgroundImage: "url('/copslogo.png')", backgroundSize: "500px 500px", backgroundPosition: "20% center" }}
+            style={{ backgroundImage: "url('/copslogo.png')", backgroundSize: "500px 500px", backgroundPosition: "15% center" }}
           />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">

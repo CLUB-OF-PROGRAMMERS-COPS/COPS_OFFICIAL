@@ -38,11 +38,11 @@ export const Hero = () => {
             Together.
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            A student-led programming community at C Byregowda Institute of Technology, focused on learning, building, and growing together.
+            A student-led programming community, guided by the Department of Computer Science & Engineering at C. Byregowda Institute of Technology, focused on learning, building, and growing together.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button 
+            <button
               onClick={() => {
                 const contactSection = document.getElementById('contact');
                 if (contactSection) {
@@ -54,9 +54,9 @@ export const Hero = () => {
               Join the Club
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <a 
-              href="https://github.com/CLUB-OF-PROGRAMMERS-COPS" 
-              target="_blank" 
+            <a
+              href="https://github.com/CLUB-OF-PROGRAMMERS-COPS"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full transition-all backdrop-blur-sm flex items-center justify-center gap-2"
             >
@@ -66,7 +66,7 @@ export const Hero = () => {
         </motion.div>
 
         {/* Floating Stats/Features */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
