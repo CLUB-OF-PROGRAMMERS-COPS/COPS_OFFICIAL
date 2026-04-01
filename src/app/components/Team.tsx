@@ -45,6 +45,22 @@ export const Team = () => {
       bio: "Cybersecurity Analyst & Security Research Enthusiast | Defending Digital Systems & Advancing Secure Technologies.",
       linkedin: "https://www.linkedin.com/in/deepak-p-s",
       email: "deepakkrishnark@gmail.com"
+    },
+    {
+      name: "Harsha S K",
+      role: "Design & Media Lead",
+      image: "COPS/harsha.jpeg",
+      bio: "Tech enthusiast focused on AI, ML and full-stack web development.",
+      linkedin: "https://www.linkedin.com/in/harsha-sk-305b5238b",
+      email: "mail2harshask@gmail.com"
+    },
+    {
+      name: "Chandu S R",
+      role: "Design & Media Lead",
+      image: "COPS/chandu.jpeg",
+      bio: "Python & AI Enthusiast | Data Analytics & Excel Skills | Generative AI Learner.",
+      linkedin: "https://www.linkedin.com/in/chandusr",
+      email: "chandusrchandusr5@gmail.com"
     }
   ];
 
