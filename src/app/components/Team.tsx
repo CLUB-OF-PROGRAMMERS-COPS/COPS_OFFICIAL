@@ -27,7 +27,7 @@ export const Team = () => {
     {
       name: "Prof. Mahalakshmi R",
       role: "Club Teacher Coordinator",
-      image: "https://cbitkolar.edu.in/wp-content/uploads/2025/09/MAHALAKSHMI.png",
+      image: "COPS/maha.jpeg",
       bio: "Asst. Professor, Dept. of CS&E."
     },
     {
