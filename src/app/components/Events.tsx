@@ -111,10 +111,10 @@ export const Events = () => {
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
       description: "Learn to enhance strategic thinking, coordination, and competitive gaming skills under pressure.",
       instructions: [
-        "Register as a 2-player team and play on the BGMI India server.",
-        "Only mobile devices allowed, with strict fair play and no cheats policy.",
-        "Compete against other teams to survive longer and perform better.",
-        "Winners are selected based on performance and awarded exciting prizes.",
+        "Squad Format: The match format has been officially changed from Duo to Squad mode.",
+        "Team Requirement: Participants must register as two complete squads to be eligible for the tournament.",
+        "Tournament Structure: Registered squads will compete across 3 mandatory challenge matches.",
+        "Rule Compliance: Following the squad-based format is compulsory for all players to ensure fair play and scoring.",
       ]
     },
     {
@@ -127,10 +127,10 @@ export const Events = () => {
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSexAFlBfP2SN5_OyQuWrtN2qGNa2VvN2CJ5BrntKXmpmCFIqw/viewform?embedded=true",
       description: "Learn to improve teamwork, strategy, and quick decision-making in competitive gaming environments.",
       instructions: [
-        "Participate in 2-player teams (duo) using mobile devices only.",
-        "Follow fair play rules: no emulators, cheats, or mods allowed.",
-        "Compete against other teams to survive longer and perform better.",
-        "Winners are selected based on performance and awarded exciting prizes.",
+        "Mode Shift: All upcoming Free Fire matches will now be played in Squad mode instead of Duo.",
+        "Full Team Registration: Every participant is required to organize and register as two full teams (Squads).",
+        "Challenge Series: The event will consist of 3 total squad matches to decide the winners.",
+        "Mandatory Update: This shift to Squad play is a mandatory requirement for tournament participation.",
       ]
     },
     {
@@ -215,7 +215,7 @@ export const Events = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">I-Sphere 1.0</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A Technical and Non-Technical competition to bring out the competitive spirit and creativity. Technical events begin at <strong>09:30 AM</strong>, followed by Non-Technical events after the technical rounds conclude. Participants can register for <strong>both</strong> Technical and Non-Technical events. Event scheduled on <strong>10-04-2026 (Friday)</strong>. Register before <strong>06-04-2026</strong>.
+            A Technical and Non-Technical competition to bring out the competitive spirit and creativity. Technical events begin at <strong>09:30 AM</strong>, followed by Non-Technical events after the technical rounds conclude. Participants can register for <strong>both</strong> Technical and Non-Technical events. Event scheduled on <strong>10-04-2026 (Friday)</strong>. Register before <strong>10-04-2026</strong>.
           </p>
         </div>
 
