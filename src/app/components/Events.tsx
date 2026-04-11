@@ -16,7 +16,7 @@ type EventItem = {
 
 export const Events = () => {
   // Set this to true and fill in event details when events are confirmed
-  const eventsConfirmed = true; // Change to false to show "Coming Soon" state
+  const eventsConfirmed = false; // Change to false to show "Coming Soon/Registration Closed" state
   ///viewform?embedded=true(to embed google form in iframe, add ?embedded=true at the end of form URL)
   const events: EventItem[] = [
     {
@@ -251,7 +251,7 @@ export const Events = () => {
                 </div>
                 {!eventsConfirmed && (
                   <div className="absolute top-4 right-4 bg-yellow-400/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-gray-900 uppercase">
-                    Coming Soon
+                    Registration Closed
                   </div>
                 )}
               </div>
